@@ -1,0 +1,4 @@
+Use npm install --force to install node modules 
+and npm run build --force to build the project
+
+use the above where issues relating to installtion or build exist

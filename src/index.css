@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+.raceei-heading {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.about {
+  font-family: "Abril Fatface", serif;
+}
+.dropdown {
+  @apply flex flex-col w-max px-3 h-screen items-center border justify-center gap-12 visible;
+}
+
+.slider::-webkit-scrollbar {
+  width: 0px;
+}
+
+.card {
+  width: 200px;
+  cursor: pointer;
+  height: 300px;
+}
+.card {
+  background: linear-gradient(#ffffff, #ffffff 50%, #8d181b 50%, #8d181b);
+
+  background-size: 100% 200%;
+  /*trasition effect for background*/
+  transition: background 0.4s;
+}
+
+.card:hover {
+  background-position: 100% 100%;
+  color: white;
+}
+
+.bg {
+  padding: 100px 0;
+  position: relative;
+  background-image: url("/src/assets/slider/Img6.png");
+  width: 100%;
+  background-size: cover; /* Adjust as needed: cover, contain, auto, or specific values like 100% 100% */
+  background-position: center center; /* Adjust the position as needed */
+  background-repeat: no-repeat;
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #302c51;
+  opacity: 0.4;
+}
+
+.contains {
+  display: flex;
+  width: 100%;
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+.slick-slide .card-content {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.support-p p {
+  margin: 5px 0;
+}
+
+.bg-cream {
+  background-color: rgb(242, 241, 239);
+}
+
+.value p {
+  color: #d0ccee;
+  font-size: 12px;
+  font-weight: bold;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.value p:hover {
+  font-size: 14px;
+}
+
+.menu-container {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu-container.visible {
+  opacity: 1;
+}
+
+
+#rc-tabs-0-tab-1 , #rc-tabs-0-tab-2 , #rc-tabs-0-tab-3{
+  color: white;
+}
+
+
